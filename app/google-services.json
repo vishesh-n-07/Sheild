@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "524732893566",
+    "project_id": "sheild-d5dd5",
+    "storage_bucket": "sheild-d5dd5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524732893566:android:c5d5e78569e2a71a170b2f",
+        "android_client_info": {
+          "package_name": "com.vishi.sheild"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArHGzqJmeiGcKEovmz-Y1o601nUiDKcHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
