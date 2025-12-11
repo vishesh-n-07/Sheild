@@ -14,6 +14,5 @@ We aim to eventually turn the solution into a wearable (watch) for instant singl
 
 ---
 
-## High-level architecture
-(Place architecture image here — upload `docs/architecture.png` or `images/architecture.png` and link it below.)
+
 
