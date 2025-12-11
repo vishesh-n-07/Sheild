@@ -7,9 +7,8 @@ We aim to eventually turn the solution into a wearable (watch) for instant singl
 
 ## Key features
 - Immediate alert with GPS location (SMS / app push).  
-- Automatic short audio recording and image capture on trigger.  
-- Evidence stored and uploaded to secure backend (for later review).  
-- Priority-level alerts (Fire / Weapon / Harassment / Medical).  
+- Automatic short audio recording and image capture on trigger.(upcoming feature, yet to add)  
+- Evidence stored and uploaded to secure backend (upcoming feature, for later review).  
 - Prototype: Android app + GSM/GPS embedded module; Future: watch integration.
 
 ---
