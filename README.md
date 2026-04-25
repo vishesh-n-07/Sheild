@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# 🛡️ SHEILD
+### Smart Human Emergency Instant Location Device
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time emergency response system that connects victims in danger with nearby rescuers instantly.
 
-## Available Scripts
+> "Every second counts in an emergency. SHEILD makes sure help is never far away."
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎯 What Problem Does It Solve?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In emergency situations like harassment, kidnapping, or accidents:
+- Calling 112 takes time
+- Typing a message is impossible under stress
+- Help from nearby people is faster than waiting for authorities
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+SHEILD solves this by letting victims send an instant SOS with their live location and voice evidence to nearby rescuers in seconds.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 How It Works
 
-### `npm run build`
+Victim presses SOS → Location + Voice captured → Alert sent to database → Nearby rescuers notified instantly
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✅ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🆘 Victim Side
+- One press SOS trigger
+- Automatic location capture
+- 60 second voice recording as evidence
+- Alert instantly sent to Supabase backend
 
-### `npm run eject`
+### 🚑 Rescuer Side
+- Real-time alert feed
+- 2km radius distance filtering
+- Time-based filtering (last 24 hours only)
+- Voice evidence playback
+- One click Google Maps navigation to victim
+- Responding status system
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🖥️ Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Home Screen
+![Home](screenshots/home.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Victim Mode
+![Victim](screenshots/victim.png)
 
-## Learn More
+### Rescuer Dashboard
+![Rescuer](screenshots/rescuer.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Tech Stack
 
-### Code Splitting
+- **Frontend:** React.js
+- **Backend:** Supabase (PostgreSQL + Realtime)
+- **Storage:** Supabase Storage (voice recordings)
+- **Location:** Browser Geolocation API
+- **Audio:** MediaRecorder API
+- **Maps:** Google Maps
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🔮 Roadmap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [ ] Push notifications (FCM)
+- [ ] Background SOS trigger
+- [ ] Family contact alerts
+- [ ] AI-powered danger detection
+- [ ] Face recognition
+- [ ] Native mobile app (Android/iOS)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🚀 Getting Started
 
-### Advanced Configuration
+### 1. Clone the repo
+```bash
+git clone https://github.com/vishesh-n-07/SHEILD.git
+cd SHEILD
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 2. Install dependencies
+```bash
+npm install
+```
 
-### Deployment
+### 3. Add Supabase credentials
+Create `src/supabase.js`:
+```javascript
+import { createClient } from '@supabase/supabase-js'
+const supabaseUrl = "your_supabase_url"
+const supabaseKey = "your_anon_key"
+export const supabase = createClient(supabaseUrl, supabaseKey)
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 4. Run the app
+```bash
+npm start
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 💡 About
+
+SHEILD started as a personal startup idea to make emergency response faster and smarter in India. Built as an MVP to validate the concept.
+
+**Built by Vishesh** 🛡️
+
+[![GitHub](https://img.shields.io/badge/GitHub-vishesh--n--07-black?logo=github)](https://github.com/vishesh-n-07)
